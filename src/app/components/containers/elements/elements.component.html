@@ -8,7 +8,7 @@
         <span class="box-bottom"></span>
 
         <div class="table-main">
-            <nav>
+           <nav>
                 <span class="material-symbols-outlined">chevron_right</span>
                 <ul>
                     <li (click)="buttonElements()">Button</li>
@@ -19,6 +19,9 @@
                 </ul>
             </nav>
             <section *ngIf="categoryElement == 1" id="button-container" class="table-content">
+                <span class="material-symbols-outlined arrow-bottom">
+                    expand_more
+                    </span>
                 <div class="item-element">
                     <span class="function-element">hover</span>
                     <span class="material-symbols-outlined">search</span>
