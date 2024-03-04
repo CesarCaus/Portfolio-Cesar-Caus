@@ -1,0 +1,114 @@
+main {
+    width: 100%;
+    height: calc(100vh + 2px);
+    padding: 50px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+section {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: left;
+
+    h1 {
+        font-size: clamp(1.8rem, 5.15vw, 80px);
+        font-weight: 300;
+        
+        span {
+            font-size: clamp(1.8rem, 5.15vw, 80px);
+            color: var(--box-color-blue);
+        }
+
+    }
+
+    h2 {
+        font-size: clamp(0.8rem, 2.15vw, 30px);
+        font-family: 'koHo', sans-serif;
+        text-align: center;
+        font-weight: 300;
+        letter-spacing: clamp(5px, 1vw, 10px);
+        padding-top: 10px;
+    }
+
+    div {
+        display: flex;
+        gap: 5%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3vw; 
+
+        span {
+            width: clamp(4em, 5vw, 60px);
+            height: clamp(4em, 5vw, 60px);
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+
+            img {
+                width: clamp(35px, 4.62vw, 40px);
+            }
+        }
+
+        span:hover {
+            background-color: var(--bg-color-primary-hover);
+            cursor: pointer;
+        }
+
+
+
+    }   
+}
+
+.box-right {
+    width: clamp(150px, 30.77vw, 400px);
+    height: clamp(400px, 40.15vw, 600px);
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    span {
+        top: 0;
+        width: clamp(250px, 30.77vw, 400px);
+        height: clamp(250px, 30.77vw, 400px);
+        border-radius: 100%;
+        background-color: var(--box-color-blue);
+        position: absolute;
+    }
+
+    img {
+        width: clamp(210px, 30.77vw, 300px);
+        top: 10px;
+        position: absolute;
+        background-color: transparent;
+    }
+}
+
+
+.line-end {
+    width: 90%;
+    height: 2px;
+    background-color: var(--line-color-primary);
+    position: absolute;
+    bottom: -2px;
+    margin-left: 5%;
+}
+
+
+@media screen and (max-width: 700px) {
+    main {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .box-left {
+        margin-top: -90px;
+    }
+}

@@ -1,0 +1,58 @@
+.btn-neon-02 button {
+    padding: 15px 20px;
+    font-size: 16px;
+    letter-spacing: 4px;
+    position: relative;
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.border {
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    overflow: hidden;
+}
+
+.border::after {
+    content: 'BUTTON';
+    color: #f525be;
+    position: absolute;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    background-color: var(--bg-color-primary); 
+    box-shadow: 0 0 40px #f525be,
+                0 0 80px #f525be,
+                0 0 140px #f525be,
+                0 0 200px #f525be;
+    top: 4px;
+    left: 4px;
+
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-neon-02 button:hover {
+    box-shadow: 0 0 40px #f525be,
+                0 0 80px #f525be,
+                0 0 140px #f525be,
+                0 0 200px #f525be;
+}
+
+.btn-neon-02 button:hover > .border::after,
+.btn-neon-02 button:hover > .border {
+    background-color: #f525be;
+    color: #242424;
+    font-weight: 400;
+}   

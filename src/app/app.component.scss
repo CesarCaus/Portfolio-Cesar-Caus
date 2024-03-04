@@ -1,0 +1,100 @@
+.desktop-header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 50px;
+    width: 100%;
+    height: fit-content;
+    min-height: 80px;
+    position: fixed;
+    z-index: 10;
+    background-color: var(--bg-color-primary);
+
+    nav {
+        position: relative;
+    
+        ul {
+            display: flex;
+            gap: 3.85vw;
+        
+            li {
+                list-style: none;
+                cursor: pointer;
+                padding: 10px 20px;
+                border-radius: 20px;
+                font-family: 'Jura', sans-serif;
+                font-size: clamp(16px, 1.4vw, 18px);
+            }
+        
+            li:hover {
+                background-color: #303030;
+            }
+        }
+    }
+    
+}
+
+.mobile-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    min-height: 80px;
+    position: fixed;
+    z-index: 10;
+    background-color: var(--bg-color-primary);
+
+    nav {
+        position: relative;
+        width: 100%;
+
+        span {
+            width: 50px;
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            height: 80px;
+        }
+
+        ul {
+           
+            display: flex;
+            flex-direction: column;
+            gap: 3.85vw;
+            text-align: center;
+            display: none;
+        
+            li {
+                list-style: none;
+                cursor: pointer;
+                padding: 10px 20px;
+                border-radius: 20px;
+                font-family: 'Jura', sans-serif;
+                font-size: clamp(16px, 1.4vw, 18px);
+            }
+        
+            li:hover {
+                background-color: #303030;
+            }
+        }
+
+        span:hover + ul {
+            display: flex;
+        }
+    }
+}
+
+
+main {
+    background: var(--bg-color-primary);
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        padding: 0;
+        justify-content: center;
+    }
+}

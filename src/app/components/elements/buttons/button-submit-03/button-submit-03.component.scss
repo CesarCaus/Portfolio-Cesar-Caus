@@ -1,0 +1,76 @@
+.btn-submit-03 button {
+    width: 140px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #a1e0ff;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //overflow: hidden;
+}
+
+.text-btn {
+    color: #a1e0ff;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.efect-bg {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.efect-bg::after {
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    border: 2px solid #a1e0ff;
+    animation: animationEfectBg 2s linear infinite;
+}
+
+.btn-submit-03 button:hover {
+    //box-shadow: 0 0 20px #a1e0ff;
+    transform: scale(1.05);
+    margin-bottom: 10px;
+}
+
+.border {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 55px;
+    border-radius: 50px;
+    border: 2px solid #a1e0ff;
+    opacity: 0;
+}
+
+.btn-submit-03 button:hover > .border {
+    opacity: 1;
+    box-shadow: 0 0 5px #a1e0ff66;
+}
+
+.btn-submit-03 button:hover > .efect-bg::after {
+    animation: none;
+    border: none;
+}
+
+@keyframes animationEfectBg {
+    0% {
+        opacity: 1;
+        width: 0;
+        height: 0;
+    } 100% {
+        opacity: 0;
+        width: 140px;
+        height: 140px;
+    }
+}

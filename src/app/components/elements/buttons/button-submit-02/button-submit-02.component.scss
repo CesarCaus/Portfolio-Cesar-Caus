@@ -1,0 +1,111 @@
+.btn-submit-02 button {
+    width: 140px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #adfdab;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //overflow: hidden;
+}
+
+.text-btn {
+    color: #adfdab;
+    font-size: 14px;
+    letter-spacing: 2px;
+    background-color: transparent;
+}
+
+.check {
+    position: absolute;
+    top: 8px;
+    width: 10px;
+    height: 15px;
+    opacity: 0;
+    border-bottom: 2px solid #adfdab;
+    border-right: 2px solid #adfdab;
+    transform: rotate(45deg);
+    z-index: 3;
+}
+
+.text-btn-animation {
+    animation: animationText 5s linear;
+}
+
+.button-animation {
+    animation: animationButton 5s linear;
+}
+
+.check-animation {
+    animation: animationCheck 5s linear;
+}
+
+@keyframes animationText {
+    0% {
+        opacity: 0;
+        
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes animationCheck {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animationButton {
+    0% {
+        width: 140px;
+    }
+
+    10% {
+        width: 45px;
+        transform: rotate(0deg);
+        border-bottom:2px solid gray;
+        border-left:2px solid gray;
+        border-right:2px solid gray;
+    }
+
+    50% {
+        width: 45px;
+        transform: rotate(360deg);
+        border-bottom:2px solid gray;
+        border-left:2px solid gray;
+        border-right:2px solid gray;
+    }
+
+    51% {
+        transform: rotate(0deg);
+    }
+
+    60% {
+        width: 140px;
+        border-bottom:2px solid #adfdab;
+        border-left:2px solid #adfdab;
+        border-right:2px solid #adfdab;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        width: 140px;
+    }
+}

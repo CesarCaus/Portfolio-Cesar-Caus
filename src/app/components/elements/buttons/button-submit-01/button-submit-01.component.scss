@@ -1,0 +1,75 @@
+.btn-submit-01 button {
+    width: 140px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: #308dd0;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon-rocket img{   
+    width: 20px;
+}
+
+.icon-rocket {
+    position: absolute;
+    left: 20px;
+}
+
+.text-btn {
+    margin-left: 25px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+
+.text-btn-click {
+    width: 140px;
+    height: 45px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: -140px;
+    background-color: green;
+}
+
+.text-btn-click-animation {
+    animation: animationBg 2s linear;
+    animation-delay: 1s;
+}
+.icon-rocket-animation {
+    animation: animationRocket 2s linear;
+}
+
+
+
+@keyframes animationRocket {
+    10% {
+        transform: rotate(45deg);
+    } 50% {
+        transform: rotate(45deg);
+        left: 0;
+    } 100% {
+        transform: rotate(45deg);
+        left: 100%;
+    }
+}
+
+@keyframes animationBg {
+    0% {
+        left: -140px;
+    } 50% {
+        left: 0;
+    } 100% {
+        left: 0;
+    }
+}

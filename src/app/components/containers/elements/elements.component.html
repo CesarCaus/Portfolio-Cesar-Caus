@@ -1,0 +1,80 @@
+<main>
+    <section class="text-elements">
+        <h1>Elementos</h1>
+        <p>Aqui estão alguns elementos comuns utilizados em aplicações web. Esses elementos foram desenvolvidos para tornar os inputs mais atraentes e dinâmicos.</p>
+        <p>Ao clicar sobre a lupa você terá acesso aos códigos HTML e CSS dos elementos. Sinta-se à vontade para usá-los como quiser.</p>
+    </section>
+    <section class="table-elements">
+        <span class="box-bottom"></span>
+
+        <div class="table-main">
+            <nav>
+                <span class="material-symbols-outlined">chevron_right</span>
+                <ul>
+                    <li (click)="buttonElements()">Button</li>
+                    <li (click)="toggleElements()">Toggle</li>
+                    <li (click)="textElements()">Text</li>
+                    <li (click)="checkboxElements()">CheckBox</li>
+                    <li (click)="radioElements()">Radio</li>
+                </ul>
+            </nav>
+            <section *ngIf="categoryElement == 1" id="button-container" class="table-content">
+                <div class="item-element">
+                    <span class="function-element">hover</span>
+                    <span class="material-symbols-outlined">search</span>
+                    <button-neon-01></button-neon-01>
+                    <span class="legend-element">btn-neon-01</span>
+                </div>
+                <div class="item-element">
+                    <span class="function-element">hover</span>
+                    <span class="material-symbols-outlined">search</span>
+                    <liquid-button></liquid-button>
+                    <span class="legend-element">liquid-btn</span>
+                    <span class="material-symbols-outlined">search</span>
+                </div>
+                <div class="item-element">
+                    <span class="function-element">hover</span>
+                    <span class="material-symbols-outlined">search</span>
+                    <button-neon-02></button-neon-02>
+                    <span class="legend-element">btn-neon-02</span>
+                </div>
+                <div class="item-element">
+                    <span class="function-element">hover</span>
+                    <span class="material-symbols-outlined">search</span>
+                    <button-submit-03></button-submit-03>
+                    <span class="legend-element">submit-btn-03</span>
+                </div>
+                <div class="item-element">
+                    <span class="function-element">hover</span>
+                    <span class="material-symbols-outlined">search</span>
+                    <button-neon-03></button-neon-03>
+                    <span class="legend-element">btn-neon-03</span>
+                </div>
+                <div class="item-element">
+                    <span class="function-element">click</span>
+                    <span class="material-symbols-outlined">search</span>
+                    <button-submit-01></button-submit-01>
+                    <span class="legend-element">submit-btn-01</span>
+                </div>
+                <div class="item-element">
+                    <span class="function-element">hover</span>
+                    <span class="material-symbols-outlined">search</span>
+                    <button-neon-04></button-neon-04>
+                    <span class="legend-element">btn-neon-04</span>
+                </div>
+                <div class="item-element">
+                    <span class="function-element">click</span>
+                    <span class="material-symbols-outlined">search</span>
+                    <button-submit-02></button-submit-02>
+                    <span class="legend-element">submit-btn-02</span>
+                </div>
+            </section>
+            <section *ngIf="categoryElement == 2" id="toggle-container" class="table-content"></section>
+            <section *ngIf="categoryElement == 3" id="text-container" class="table-content"></section>
+            <section *ngIf="categoryElement == 4" id="checkbox-container" class="table-content"></section>
+            <section *ngIf="categoryElement == 5" id="radio-container" class="table-content"></section>
+        </div>
+
+        
+    </section>
+</main>

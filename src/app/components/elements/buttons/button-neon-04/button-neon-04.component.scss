@@ -1,0 +1,71 @@
+.btn-neon-04 button {
+    padding: 15px 20px;
+    font-size: 16px;
+    letter-spacing: 4px;
+    position: relative;
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.border {
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    overflow: hidden;
+}
+
+.border::after {
+    content: 'BUTTON';
+    color: #84fab0;
+    position: absolute;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    background-color: var(--bg-color-primary); 
+    animation: animation01 0.5s linear infinite;
+    top: 4px;
+    left: 4px;
+
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-neon-04 button:hover {
+    box-shadow: 0 0 40px #84fab0,
+                0 0 80px #84fab0,
+                0 0 140px #84fab0,
+                0 0 200px #84fab0;
+}
+
+.btn-neon-04 button:hover > .border::after,
+.btn-neon-04 button:hover > .border {
+    background-color: #84fab0;
+    color: #242424;
+    font-weight: 400;
+    animation: none;
+}   
+
+
+@keyframes animation01 {
+    0% {
+        box-shadow: 0px 2px 2px #84fab0;
+    } 25% {
+        box-shadow: 2px 0px 2px #84fab0;
+    } 50% {
+        box-shadow: 0px -2px 2px #84fab0;
+    } 75% {
+        box-shadow: -2px 0px 2px #84fab0;
+    } 100% {
+        box-shadow: 0px 2px 2px #84fab0;
+    }
+} 

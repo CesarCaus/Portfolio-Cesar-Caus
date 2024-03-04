@@ -1,0 +1,110 @@
+.btn-neon-01  button {
+    padding: 15px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #6192e8;
+    letter-spacing: 4px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+
+}
+
+.btn-neon-01 button:hover {
+    background-color: #6192e8;
+    color: var(--bg-color-primary);
+    box-shadow: 0px 0px 40px #6192e8,
+                0px 0px 80px #6192e8,
+                0px 0px 140px #6192e8,
+                0px 0px 200px #6192e8;
+    
+    transition-delay: 1s;
+    transition: 0.2s;
+
+}
+
+.border {
+    position: absolute;
+}
+
+.border:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    animation: animation01 1s linear infinite;
+    animation-delay: 1;
+    background: linear-gradient(to right, transparent, #6192e8);
+}
+
+@keyframes animation01 {
+    0% {
+        left: -100%;
+    }
+
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+.border:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    animation: animation02 1s linear infinite;
+    animation-delay: 1.25s;
+    background: linear-gradient(to bottom, transparent, #6192e8);
+}
+
+@keyframes animation02 {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+.border:nth-child(3) {
+    bottom: 0;
+    right:-100%;
+    width: 100%;
+    height: 2px;
+    animation: animation03 1s linear infinite;
+    animation-delay: 1.75s;
+    background: linear-gradient(to left, transparent, #6192e8);
+}
+
+@keyframes animation03 {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+.border:nth-child(4) {
+    left: 0;
+    bottom:-100%;
+    width: 2px;
+    height: 100%;
+    animation: animation04 1s linear infinite;
+    animation-delay: 2.25s;
+    background: linear-gradient(to top, transparent, #6192e8);
+}
+
+@keyframes animation04 {
+    0% {
+        bottom: -100%;
+    }
+
+    100% {
+        bottom: 100%;
+    }
+}
