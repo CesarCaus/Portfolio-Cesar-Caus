@@ -1,12 +1,14 @@
 <main>
     <section class="form-contact">
         <section class="container-form">
-            <form action="">
-                <input placeholder="Nome" type="text" name="name" id="name">
+            <form action="https://formsubmit.co/cesarcaustec@gmail.com" method="POST">
+                <input placeholder="Nome" type="text" name="name" id="name" required>
                 <input placeholder="Telefone (DD)" type="text" name="tel" id="tel">                
-                <input placeholder="E-mail" type="text" name="email" id="email">
-                <textarea placeholder="Escreva uma mensagem..." name="message" id="message"></textarea>
-                <button>Enviar</button>
+                <input placeholder="E-mail" type="text" name="email" id="email" required>
+                <textarea placeholder="Escreva uma mensagem..." name="message" id="message" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://localhost:4200/#contact">
+                <button type="submit">Enviar</button>
             </form>
         </section>
         <span class="box-form"></span>
@@ -14,13 +16,17 @@
     <section class="text-contact">
         <h1>Contato</h1>
         <h2>Entre em contato comigo</h2>
-        <p>Sinta-se à vontade para me enviar uma mensagem através do formulário ao lado, inserindo seu nome e e-mail/telefone. Retornarei o mais breve possível. </p>
+        <p>Sinta-se à vontade para me enviar uma mensagem através do formulário nessa seção, inserindo seu nome e e-mail/telefone. Retornarei o mais breve possível. </p>
         <p>Você também pode entrar em contato comigo através das minhas redes sociais abaixo.</p>
         <div class="box-social"> 
-            <span><img src="../../../../assets/Whatsapp.png" alt="whatsapp icon" /></span>
-            <span><img src="../../../../assets/Instagram.png" alt="Instagram icon" /></span>
-            <span><img src="../../../../assets/Github.png" alt="GitHub icon" /></span>
-            <span><img src="../../../../assets/Linkedin.png" alt="Linkedin icon" /></span>
+            <a href="https://wa.me/5562986430569?text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato...
+            " target="_blank"><span><img src="../../../../assets/Whatsapp.png" alt="whatsapp icon" /></span></a>
+            <a href="https://www.instagram.com/cesarcausp/" target="_blank"><span><img src="../../../../assets/Instagram.png" alt="Instagram icon" /></span></a>
+            <a href="https://github.com/cesarcaus" target="_blank"><span><img src="../../../../assets/Github.png" alt="GitHub icon" /></span></a>
+            <a href="https://br.linkedin.com/in/cesarcaus" target="_blank"> <span><img src="../../../../assets/Linkedin.png" alt="Linkedin icon" /></span></a>
+            
+            
+           
         </div>
     </section>
 </main>
