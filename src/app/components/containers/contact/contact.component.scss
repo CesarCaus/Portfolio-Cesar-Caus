@@ -97,24 +97,25 @@ main {
 
 
 .text-contact {
-    width: 40%;
+    width: clamp(350px, 40vw, 800px);
+    height: fit-content;
     display: flex;
     flex-direction: column;
     gap: 20px;
 
     h1 {
-        font-size: clamp(1.8rem, 5.15vw, 80px);
-        font-weight: 300;
+        font-size: clamp(2rem, 4.15vw, 70px);
+        padding: 20px 0;
     }
 
     h2 {
-        font-size: clamp(0.8rem, 2.15vw, 30px);
+        color: rgb(88, 88, 255);
+        font-size: clamp(1.2rem, 3.15vw, 50px);
     }
 
     p {
-        font-size: clamp(0.8rem, 2.15vw, 1rem);
+        font-size: clamp(1rem, 1.5vw, 30px);
         padding: 10px 0;
-        line-height: 25px;
         text-align: justify;
     }
 
@@ -128,6 +129,10 @@ main {
 
         span {
             cursor: pointer;
+
+            img {
+                width: 45px;
+            }
         }
     }
 
@@ -187,4 +192,60 @@ main {
         margin-left: 25px;
         margin-top: 9px;
     }  
+}
+
+@media screen and (min-width: 2600px) {
+    main {
+        justify-content: center;
+        gap: 500px;
+    }
+
+
+    .text-contact {
+        
+    }
+
+
+    .form-contact {
+       width: 1000px;
+       height: 1000px;
+    }
+    
+    .box-form {
+        width: 1000px;
+        height: 1000px;
+    }
+    
+    .box-form::after {
+        width: 980px;
+       height: 980px;
+    }
+    
+    .container-form {
+        width: 1000px;
+        height: 1000px;
+
+        form {
+            gap: 80px;
+
+            input, 
+            textarea {
+                font-size: 30px;
+            }
+
+            textarea {
+                height: 300px;
+                max-height: 300px;
+            }
+
+            button {
+                font-size: 30px;
+                width: 300px;
+                height: 60px;
+            }
+        }
+        
+    }
+
+   
 }
