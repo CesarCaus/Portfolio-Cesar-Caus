@@ -1,6 +1,7 @@
 main {
     width: 100%;
     height: calc(100vh + 2px);
+    min-height: fit-content;
     padding: 50px;
     padding-top: 100px;
     display: flex;

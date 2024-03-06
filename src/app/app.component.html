@@ -1,18 +1,8 @@
-<header *ngIf="!isMobile" class="desktop-header">
+<header class="desktop-header">
+    <span id="toggle-theme" (click)="toggleTheme()">
+        <span [ngClass]="{'toggle-theme-dark': darkTheme, 'toggle-theme-light': !darkTheme}"></span>
+    </span>
     <nav>
-        <ul>
-            <li (click)="scrollToComponent('about')">Sobre</li>
-            <li (click)="scrollToComponent('elements')">Elementos</li>
-            <li (click)="scrollToComponent('interfaces')">Interfaces</li>
-            <li (click)="scrollToComponent('contact')">Contato</li>
-        </ul>
-    </nav>
-</header>
-<header *ngIf="isMobile" class="mobile-header">
-    <nav>
-        <span class="material-symbols-outlined">
-            menu
-            </span>
         <ul>
             <li (click)="scrollToComponent('about')">Sobre</li>
             <li (click)="scrollToComponent('elements')">Elementos</li>

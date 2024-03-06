@@ -1,4 +1,4 @@
-import { Component, Inject, HostListener } from '@angular/core';
+import { Component, Inject, HostBinding } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import { HomeComponent } from './components/containers/home/home.component';
@@ -25,6 +25,7 @@ export class AppComponent {
   title = 'Portfolio';
 
  constructor(@Inject(DOCUMENT) private document: Document) {}
+ 
 
   scrollToComponent(anchor: string): void {
     const element = document.querySelector(`#${anchor}`);
@@ -36,19 +37,20 @@ export class AppComponent {
     })
   }
 
-  isMobile: boolean = false;
+  darkTheme:boolean = true;
 
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any): void {
-    this.checkScreenWidth();
+  // Aplica a classe CSS correspondente ao tema atual
+  @HostBinding('class') get themeClass() {
+    return this.darkTheme ? 'dark-theme' : 'light-theme';
   }
 
-  private checkScreenWidth(): void {
-    this.isMobile = window.innerWidth < 700;
+  // Alterna entre os temas
+  toggleTheme() {
+    this.darkTheme = !this.darkTheme;
+    localStorage.setItem('theme', JSON.stringify(this.darkTheme));
   }
 
-  /*ngOnInit(): void {
-    this.checkScreenWidth();
-  }*/
+
+
 
 }

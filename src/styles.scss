@@ -1,14 +1,33 @@
 //Variaveis CSS para uso global
-
-:root {
-    --bg-color-primary: #242424;
-    --bg-color-primary-hover: #303030;
-    --bg-color-secundary: black;
-    --font-color-primary: white;
-    --font-color-secundary: rgb(0, 0, 0);
-    --box-color-blue: #7977F6;
-    --line-color-primary: rgb(111, 111, 111);
+.dark-theme {
+  --bg-color-primary: #242424;
+  --bg-color-primary-hover: #303030;
+  --bg-color-secundary: black;
+  --font-color-primary: white;
+  --font-color-secundary: rgb(0, 0, 0);
+  --box-color-blue: #7977F6;
+  --line-color-primary: rgb(111, 111, 111);
+  --color-track-scrollbar: #777777;
 }
+
+// Definições de estilo para o tema light
+.light-theme {
+  --bg-color-primary: #fff;
+  --bg-color-primary-hover: #eaeaea;
+  --bg-color-secundary: #f6f6f6;
+  --font-color-primary: rgb(0, 0, 0);
+  --font-color-secundary: rgb(255, 255, 255);
+  --box-color-blue: #7977F6;
+  --line-color-primary: rgb(111, 111, 111);
+  --color-track-scrollbar: #bfbfbf;
+}
+
+// Aplicações padrão do tema dark
+body {
+  @extend .dark-theme;
+}
+
+
 
 * {
     padding: 0;
@@ -26,17 +45,17 @@
   
   /* Estilo do polegar da barra de rolagem */
   ::-webkit-scrollbar-thumb {
-    background-color: #303030; /* Cor do polegar */
+    background-color: var(--bg-color-primary-hover); /* Cor do polegar */
     border-radius: 6px; /* Borda arredondada do polegar */
     padding: 2px;
   }
   
   /* Estilo da barra de rolagem ao passar o mouse */
   ::-webkit-scrollbar-thumb:hover {
-    background-color: #101010; /* Cor do polegar ao passar o mouse */
+    background-color: var(--font-color-secundary); /* Cor do polegar ao passar o mouse */
   }
   
   /* Estilo da pista (track) da barra de rolagem */
   ::-webkit-scrollbar-track {
-    background-color: #777777; /* Cor da pista */
+    background-color: var(--color-track-scrollbar); /* Cor da pista */
   }
