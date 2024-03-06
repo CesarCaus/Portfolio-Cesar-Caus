@@ -1,3 +1,5 @@
+
+
 .desktop-header {
     display: flex;
     justify-content: right;
@@ -27,11 +29,45 @@
             }
         
             li:hover {
-                background-color: #303030;
+                background-color: var(--bg-color-primary-hover);
             }
         }
     }
     
+}
+
+
+#toggle-theme {
+   width: 45px;
+   height: 25px;
+   background-color: var(--line-color-primary);
+   position: absolute;
+   left: 10px;
+   border-radius: 50px;
+   top: calc(50% - 25px);
+   cursor: pointer;
+}
+
+.toggle-theme-dark {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--bg-color-primary);
+    border-radius: 50%;
+    top: 2.5px;
+    left: 2.5px;
+}
+
+.toggle-theme-light {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--bg-color-primary);
+    border-radius: 50%;
+    top: 2.5px;
+    right: 2.5px;
 }
 
 .mobile-header {
