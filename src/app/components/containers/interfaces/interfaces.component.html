@@ -1,20 +1,28 @@
 <main>
-    <section class="text-interfaces">
-        <h1>Interfaces</h1>
-    </section>
-    <section class="container-interfaces">
+    <header>
+        <span class="title-interface"><h1>Interfaces</h1></span>
         <nav>
+            <span (click)="openMenu()" class="material-symbols-outlined menu">menu</span>
             <ul>
-                <li>Login</li>
-                <li>Cadastro</li>
-                <li>Catálogo</li>
-                <li>Formulários</li>
+                <li>Login/Cadastro</li>
+                <li>Catalogos</li>
                 <li>Dashboards</li>
+                <li>Blogs</li>
+                <li>Formulários</li>
+            </ul>
+            <span class="material-symbols-outlined arrow-right">
+                arrow_forward_ios
+                </span>
+        </nav>
+    </header>
+    <section class="container-main">
+        <nav [ngClass]="{'menu-open': valueMenu}">
+            <ul>
+                <li>Interface-01</li>
+                <li>Interface-01</li>
+                <li>Interface-01</li>
             </ul>
         </nav>
-
-        <section class="content">
-            <div class="interface-item"></div>
-        </section>
+        <div class="container-content"></div>
     </section>
 </main>
