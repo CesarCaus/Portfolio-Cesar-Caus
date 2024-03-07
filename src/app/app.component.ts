@@ -51,6 +51,15 @@ export class AppComponent {
   }
 
 
+  menuValue: boolean = false;
+  iconMenu: string = 'menu'
+
+  openMenuSup() {
+    this.menuValue = !this.menuValue;
+    this.iconMenu = this.menuValue? 'menu_open' :'menu';
+    
+  }
+
 
 
 }
