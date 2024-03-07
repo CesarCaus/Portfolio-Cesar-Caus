@@ -3,13 +3,14 @@
         <span [ngClass]="{'toggle-theme-dark': darkTheme, 'toggle-theme-light': !darkTheme}"></span>
     </span>
     <nav>
-        <ul>
+        <ul [ngClass]="{'menu-open' : menuValue}">
             <li (click)="scrollToComponent('about')">Sobre</li>
             <li (click)="scrollToComponent('elements')">Elementos</li>
             <li (click)="scrollToComponent('interfaces')">Interfaces</li>
             <li (click)="scrollToComponent('contact')">Contato</li>
         </ul>
     </nav>
+    <span (click)="openMenuSup()" class="material-symbols-outlined menu">{{ iconMenu }}</span>
 </header>
 <main>
     <app-home id="home"></app-home>
