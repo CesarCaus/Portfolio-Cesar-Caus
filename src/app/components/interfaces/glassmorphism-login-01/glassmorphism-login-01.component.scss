@@ -1,5 +1,194 @@
 main {
     width: 100%;
+    height: calc(70vh - 20px);
+    background: linear-gradient(270deg, #a1c4fd, #c2e9fb);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container-form {
+    z-index: 3;
+    width: 350px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.4);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.photo-user {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #c2e9fb49;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    top: -40px;
+    background: linear-gradient(270deg, #a1c4fd7e, #c2e9fb8c);
+}
+
+#form {
+
+    width: 100%;
     height: 100%;
-    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: end;   
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+#form .box-input input {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    padding: 5px;
+    padding-left: 40px;
+}
+
+.box-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.icon-input {
+    position: absolute;
+    left: 10px;
+}
+
+.forgot-remember-box {
+    width: 80%;
+    position: relative;
+}
+
+.forgot-remember-box input {
+    position: absolute;
+    top: -8px;
+    left: 15px;
+}
+
+.forgot-remember-box label {
+    position: absolute;
+    left: 33px;
+    top: -10px;
+    font-size: 14px;
+}
+
+.forgot-password {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    font-size: 14px;
+}
+
+#button-submit {
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+
+.sign-up {
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.circle-01 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #c2e9fb, transparent);
+    right: 10%;
+    top: 30px;
+}
+
+.circle-01::after {
+    content: '';
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #a1c4fd, transparent);
+    left: 30px;
+    top: 0px;
+}
+
+.circle-02 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #a1c4fd, transparent);
+    left: 20%;
+    bottom: 30px;
+}
+
+.circle-02::after {
+    content: '';
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #c2e9fb, transparent);
+    right: 0;
+    top: 0px;
+}
+
+.circle-03 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #a1c4fd, transparent);
+    left: 5%;
+    top: 30px;
+}
+
+.circle-03::after {
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #c2e9fb, transparent);
+    right: 0;
+    top: 0px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .circle-01 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 568px) {
+
+    .container-form {
+        width: 90%;
+    }
 }
