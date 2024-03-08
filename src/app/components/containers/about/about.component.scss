@@ -40,6 +40,10 @@ section {
         img {
             width: clamp(3em, 6.92vw, 70px);
         }
+
+        .php-icon {
+            width: clamp(3em, 6.92vw, 70px);
+        }
     }
 
     .line:nth-child(2) {
