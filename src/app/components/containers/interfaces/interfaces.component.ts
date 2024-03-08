@@ -20,4 +20,18 @@ export class InterfacesComponent {
   openMenu() {
     this.valueMenu = !this.valueMenu;
   }
+
+
+  interfaceValue: number = 1;
+
+
+  contentInterfaceValue: number = 1;
+
+  attPageInterfaces(n: number): void {
+    this.interfaceValue = n;
+  }
+
+  attContentInterface(n: number): void {
+    this.contentInterfaceValue = n;
+  }
 }

@@ -4,11 +4,11 @@
         <nav>
             <span (click)="openMenu()" class="material-symbols-outlined menu">menu</span>
             <ul>
-                <li>Login/Cadastro</li>
-                <li>Catalogos</li>
-                <li>Dashboards</li>
-                <li>Blogs</li>
-                <li>Formulários</li>
+                <li (click)="attPageInterfaces(1)">Login/Cadastro</li>
+                <li (click)="attPageInterfaces(2)">Catálogos</li>
+                <li (click)="attPageInterfaces(3)">Dashboards</li>
+                <li (click)="attPageInterfaces(4)">Blogs</li>
+                <li (click)="attPageInterfaces(5)">Formulários</li>
             </ul>
             <span class="material-symbols-outlined arrow-right">
                 arrow_forward_ios
@@ -18,11 +18,32 @@
     <section class="container-main">
         <nav [ngClass]="{'menu-open': valueMenu}">
             <ul>
-                <li>Interface-01</li>
-                <li>Interface-01</li>
-                <li>Interface-01</li>
+                <li (click)="attContentInterface(1)">Glassmorphism-Interface-01</li>
+                <li (click)="attContentInterface(2)"></li>
+                <li></li>
             </ul>
         </nav>
-        <div class="container-content"></div>
+        <div *ngIf="interfaceValue == 1" class="container-content">
+            <section *ngIf="contentInterfaceValue == 1" class="content">
+                <glassmorphism-login-01></glassmorphism-login-01>
+            </section>
+        </div>
+        <div *ngIf="interfaceValue == 2" class="container-content">
+            <section *ngIf="contentInterfaceValue == 1" class="content">
+
+            </section>
+        </div>
+        <div *ngIf="interfaceValue == 3" class="container-content">
+            <section *ngIf="contentInterfaceValue == 1" class="content">
+
+            </section>
+        </div>
+        <div *ngIf="interfaceValue == 4" class="container-content">
+            <section *ngIf="contentInterfaceValue == 1" class="content">
+
+            </section>
+        </div>
+        
+        
     </section>
 </main>
