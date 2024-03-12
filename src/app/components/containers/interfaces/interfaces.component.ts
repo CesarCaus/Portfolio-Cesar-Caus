@@ -32,6 +32,6 @@ export class InterfacesComponent {
   }
 
   attContentInterface(n: number): void {
-    this.contentInterfaceValue = n;
+    this.contentInterfaceValue = n; 
   }
 }
