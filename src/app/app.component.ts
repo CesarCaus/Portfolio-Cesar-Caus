@@ -7,6 +7,7 @@ import { CommonModule, DOCUMENT } from '@angular/common';
 import { ElementsComponent } from './components/containers/elements/elements.component';
 import { InterfacesComponent } from './components/containers/interfaces/interfaces.component';
 import { ContactComponent } from './components/containers/contact/contact.component';
+import { ProjectsComponent } from './components/containers/projects/projects.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { ContactComponent } from './components/containers/contact/contact.compon
   AboutComponent,
   ElementsComponent,
   InterfacesComponent,
+  ProjectsComponent,
   ContactComponent,
   CommonModule],
   templateUrl: './app.component.html',
