@@ -5,7 +5,6 @@ import { HomeComponent } from './components/containers/home/home.component';
 import { AboutComponent } from './components/containers/about/about.component';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { ElementsComponent } from './components/containers/elements/elements.component';
-import { InterfacesComponent } from './components/containers/interfaces/interfaces.component';
 import { ContactComponent } from './components/containers/contact/contact.component';
 import { ProjectsComponent } from './components/containers/projects/projects.component';
 
@@ -16,7 +15,6 @@ import { ProjectsComponent } from './components/containers/projects/projects.com
   HomeComponent,
   AboutComponent,
   ElementsComponent,
-  InterfacesComponent,
   ProjectsComponent,
   ContactComponent,
   CommonModule],

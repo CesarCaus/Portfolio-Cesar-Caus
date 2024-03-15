@@ -1,6 +1,5 @@
 main {
     width: 100%;
-    height: 100vh;
     min-height: fit-content;
     background-color: var(--bg-color-secundary);
     padding-top: 100px;
@@ -21,7 +20,6 @@ main {
         max-width: 1500px;
         height: fit-content;
         min-height: fit-content;
-        max-height: 600px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); 
         gap: 20px;
@@ -87,9 +85,14 @@ main {
            }
         }
 
+        .project:hover {
+            background-color: var(--bg-color-primary-hover);
+        }
       
     }
 }
+
+
 
 @media screen and (max-width:1224px) {
     main {
@@ -97,7 +100,7 @@ main {
         height: fit-content;
 
         .projects-container {
-            width: 80%;
+            width: 90%;
         }
     }
 }
@@ -122,6 +125,43 @@ main {
         .projects-container {
             grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); 
 
+
+            .project {
+                height: 250px;
+            }
+          
+        }
+    }
+}
+
+
+@media screen and (max-width:345px) {
+    main {
+
+        .projects-container {
+
+            .project {
+               
+                padding: 10px;
+
+                h2 {
+                    font-size: 17px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+
+                .tools {
+
+                    gap: 15px;
+                }
+
+                .icon {
+                    top: 10px;
+                }
+
+            }
           
         }
     }
