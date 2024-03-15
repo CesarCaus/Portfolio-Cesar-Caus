@@ -6,7 +6,6 @@
         <ul [ngClass]="{'menu-open' : menuValue}">
             <li (click)="scrollToComponent('about')">Sobre</li>
             <li (click)="scrollToComponent('elements')">Elementos</li>
-            <li (click)="scrollToComponent('interfaces')">Interfaces</li>
             <li (click)="scrollToComponent('projects')">Projetos</li>
             <li (click)="scrollToComponent('contact')">Contato</li>
         </ul>
@@ -17,7 +16,6 @@
     <app-home id="home"></app-home>
     <app-about id="about"></app-about>
     <app-elements id="elements"></app-elements>
-    <app-interfaces id="interfaces"></app-interfaces>
     <app-projects id="projects"></app-projects>
     <app-contact id="contact"></app-contact>
 </main>
