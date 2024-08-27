@@ -21,7 +21,7 @@ main {
         height: fit-content;
         min-height: fit-content;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); 
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
         gap: 20px;
 
         a {
@@ -60,6 +60,7 @@ main {
 
                 span {
                     width: 70px;
+                    min-width: fit-content;
                     text-align: center;
                     padding: 10px;
                     font-size: 14px;
@@ -88,7 +89,7 @@ main {
         .project:hover {
             background-color: var(--bg-color-primary-hover);
         }
-      
+
     }
 }
 
@@ -123,13 +124,13 @@ main {
     main {
 
         .projects-container {
-            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); 
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
 
 
             .project {
                 height: 250px;
             }
-          
+
         }
     }
 }
@@ -141,7 +142,7 @@ main {
         .projects-container {
 
             .project {
-               
+
                 padding: 10px;
 
                 h2 {
@@ -162,7 +163,7 @@ main {
                 }
 
             }
-          
+
         }
     }
 }
@@ -178,7 +179,7 @@ main {
 
            .project {
             height: 250px;
-           } 
+           }
         }
     }
 }

@@ -7,6 +7,7 @@ import { CommonModule, DOCUMENT } from '@angular/common';
 import { ElementsComponent } from './components/containers/elements/elements.component';
 import { ContactComponent } from './components/containers/contact/contact.component';
 import { ProjectsComponent } from './components/containers/projects/projects.component';
+import { MyExperienceComponent } from './components/containers/my-experience/my-experience.component';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,7 @@ import { ProjectsComponent } from './components/containers/projects/projects.com
   ElementsComponent,
   ProjectsComponent,
   ContactComponent,
+  MyExperienceComponent,
   CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
@@ -25,15 +27,15 @@ export class AppComponent {
   title = 'Portfolio';
 
  constructor(@Inject(DOCUMENT) private document: Document) {}
- 
+
 
   scrollToComponent(anchor: string): void {
     const element = document.querySelector(`#${anchor}`);
 
-    element?.scrollIntoView({ 
-      behavior: 'smooth', 
-      block: 'start', 
-      inline: 'nearest' 
+    element?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
     })
   }
 
@@ -57,7 +59,7 @@ export class AppComponent {
   openMenuSup() {
     this.menuValue = !this.menuValue;
     this.iconMenu = this.menuValue? 'menu_open' :'menu';
-    
+
   }
 
 
