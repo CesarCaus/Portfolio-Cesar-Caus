@@ -15,8 +15,9 @@ section {
 
     h1 {
         width: fit-content;
-        font-size: clamp(2rem, 5.15vw, 80px);
+        font-size: clamp(2rem, 5.15vw, 70px);
         padding-bottom: 30px;
+        font-weight: 500;
     }
 
     p {
