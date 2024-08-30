@@ -1,13 +1,22 @@
 <main>
     <section class="form-contact">
         <section class="container-form">
-            <form action="https://cesarcaus.netlify.app/#contact" name="contact" netlify>
+            <form action="https://formsubmit.co/cesarcaustec@gmail.com" method="POST">
+
                 <input placeholder="Nome" type="text" name="name" id="name" required>
-                <input placeholder="Telefone (DD)" type="text" name="tel" id="tel">                
-                <input placeholder="E-mail" type="text" name="email" id="email" required>
+                <input placeholder="Telefone (DD)" type="tel" name="tel" id="tel">
+                <input placeholder="E-mail" type="email" name="email" id="email" required>
                 <textarea placeholder="Escreva uma mensagem..." name="message" id="message" required></textarea>
+
+                <!-- Redirecionar após envio -->
+                <input type="hidden" name="_next" value="http://cesarcaus.netlify.app/#contact">
+
+                <!-- Desativar CAPTCHA se não for necessário -->
+                <input type="hidden" name="_captcha" value="false">
+
                 <button type="submit">Enviar</button>
-            </form>
+
+              </form>
         </section>
         <span class="box-form"></span>
     </section>
@@ -16,7 +25,7 @@
         <h2>Entre em contato comigo</h2>
         <p>Sinta-se à vontade para me enviar uma mensagem através do formulário nessa seção, inserindo seu nome e e-mail/telefone. Retornarei o mais breve possível. </p>
         <p>Você também pode entrar em contato comigo através das minhas redes sociais abaixo.</p>
-        <div class="box-social"> 
+        <div class="box-social">
             <a href="https://wa.me/5562986430569?text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato...
             " target="_blank"><span><img src="assets/Whatsapp.png" alt="whatsapp icon" /></span></a>
             <a href="https://www.instagram.com/cesarcausp/" target="_blank"><span><img src="assets/Instagram.png" alt="Instagram icon" /></span></a>
