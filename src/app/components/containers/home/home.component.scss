@@ -254,3 +254,26 @@ section {
     }
 
 }
+
+.absolute-notice {
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    z-index: 10;
+
+
+    .text {
+        color: black;
+    }
+
+    a {
+        color: #7977F6;
+        margin-left: 10px;
+    }
+}
